@@ -16,7 +16,7 @@ const modes = [
     id: "keyword",
     title: "Keyword Mode",
     description:
-      "Define positive and negative keywords to search clinical text. Fully local — no AI needed. High-accuracy pattern matching with intelligent boundary detection. Perfect for simple, high-volume screening.",
+      "Define positive and negative keywords to search clinical text. No AI required — high-accuracy pattern matching with intelligent boundary detection. Perfect for simple, high-volume screening.",
   },
   {
     id: "concept",

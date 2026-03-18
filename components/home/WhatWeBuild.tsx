@@ -20,7 +20,7 @@ const features = [
     ),
     title: "Privacy-First",
     description:
-      "Data stays on your infrastructure. No cloud processing required for core analysis.",
+      "Designed with healthcare compliance in mind — flexible deployment options to meet your organization's security requirements.",
   },
   {
     icon: (

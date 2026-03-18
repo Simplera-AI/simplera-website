@@ -5,7 +5,7 @@ const features = [
   "Analyze Excel, CSV, and free-text clinical documents",
   "Three analysis modes: Keyword, Concept, and Sentence Search",
   "AI-powered classification with negation detection",
-  "100% browser-based — patient data never leaves your machine",
+  "Flexible deployment — cloud or on-premise to fit your compliance needs",
   "Color-coded results with confidence indicators",
   "Export to CSV or Excel with full audit trail",
 ];
