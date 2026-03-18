@@ -33,10 +33,15 @@ export default function ContactForm() {
 
     setState("loading");
     try {
-      const res = await fetch("https://formspree.io/f/xpwzgkqd", {
+      const res = await fetch("/api/contact", {
         method: "POST",
-        body: form,
-        headers: { Accept: "application/json" },
+        body: JSON.stringify({
+          name: form.get("name"),
+          email: form.get("email"),
+          company: form.get("company"),
+          message: form.get("message"),
+        }),
+        headers: { "Content-Type": "application/json" },
       });
       setState(res.ok ? "success" : "error");
     } catch {

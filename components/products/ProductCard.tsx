@@ -16,13 +16,13 @@ const modes = [
     id: "keyword",
     title: "Keyword Mode",
     description:
-      "Define positive and negative keywords to search clinical text. Fully local — no AI needed. Uses NLP tokenization with word-boundary matching for accurate detection. Perfect for simple, high-volume screening.",
+      "Define positive and negative keywords to search clinical text. Fully local — no AI needed. High-accuracy pattern matching with intelligent boundary detection. Perfect for simple, high-volume screening.",
   },
   {
     id: "concept",
     title: "Concept Mode",
     description:
-      "A 4-phase pipeline: retrieve candidate matches, detect assertion status via medspaCy NLP, resolve conflicts with optional AI classification, and merge synonym concepts. Handles negation (\"no evidence of metastasis\"), uncertainty, and complex clinical language.",
+      "Advanced clinical language understanding that detects assertion status, handles negation (\"no evidence of metastasis\"), resolves ambiguity with AI-powered classification, and recognizes synonym concepts. Built for the complexity of real-world clinical language.",
   },
   {
     id: "search",
@@ -49,8 +49,7 @@ export default function ProductCard() {
                 ClinDetect
               </h2>
               <p className="text-text-secondary mt-2 max-w-xl text-[17px] leading-relaxed">
-                Clinical text analysis that turns unstructured pathology reports
-                and clinical notes into structured, actionable data.
+                Clinical text analysis that turns any unstructured clinical data — pathology reports, clinical notes, imaging results — into structured, actionable data.
               </p>
             </div>
             <div className="flex gap-3">

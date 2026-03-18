@@ -23,8 +23,7 @@ export default function ProductShowcase() {
             ClinDetect
           </h2>
           <p className="text-[17px] text-text-secondary leading-relaxed mb-8">
-            Clinical text analysis that turns unstructured pathology reports and
-            clinical notes into structured, actionable data — in seconds.
+            Clinical text analysis that turns any unstructured clinical data — pathology reports, clinical notes, imaging results — into structured, actionable data.
           </p>
           <ul className="space-y-3 mb-8">
             {features.map((f) => (
