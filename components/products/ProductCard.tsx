@@ -32,37 +32,6 @@ const modes = [
   },
 ];
 
-const previewRows = [
-  { id: 1, patientId: "cd3866d9-66b1-4f15-a152-0f11ef08d691", testType: "Anatomic Pathology — Primary Malignancy", status: "NO", evidence: "organoid neuroendocrine carcinoma with ros…" },
-  { id: 2, patientId: "a749c1d8-e4f3-4d97-a91b-58fe9f5446a3", testType: "Pathology Report — Secondary Malignancy", status: "YES", evidence: "outside institution reported metastatic Non-…" },
-  { id: 3, patientId: "612a9d07-9250-492d-a5c3-69f91e733507", testType: "Molecular Pathology — Metastatic Solid Tumor", status: "YES", evidence: "M1b — multiple organ involvement; this biop…" },
-  { id: 4, patientId: "93ae95c3-7ceb-410f-960c-0f3b08d6ed2e", testType: "Surgical Pathology — Primary Solid Tumor", status: "POSSIBLE", evidence: "Morphology favors metastatic adenocarcino…" },
-  { id: 5, patientId: "12175a83-4120-4bf1-a934-581dacf58c66", testType: "Pathology Report — Primary Carcinoma", status: "NO", evidence: "staging negative for metastasis" },
-  { id: 6, patientId: "a1ea1cd0-1af2-4113-939a-c838b77584e6", testType: "Histopathology — Primary Surgical Excision", status: "NO", evidence: "—" },
-  { id: 7, patientId: "fe31a69c-139d-4011-aab0-df3da1d0d1fc", testType: "Surgical Pathology — Primary Solid Tumor", status: "POSSIBLE", evidence: "6/21 nodes positive; extranodal extension 2.8…" },
-];
-
-function StatusBadge({ status }: { status: string }) {
-  if (status === "YES") {
-    return (
-      <span className="inline-block px-2.5 py-0.5 rounded text-xs font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
-        YES
-      </span>
-    );
-  }
-  if (status === "POSSIBLE") {
-    return (
-      <span className="inline-block px-2.5 py-0.5 rounded text-xs font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30">
-        POSSIBLE
-      </span>
-    );
-  }
-  return (
-    <span className="inline-block px-2.5 py-0.5 rounded text-xs font-bold bg-white/[0.06] text-gray-400 border border-white/[0.08]">
-      NO
-    </span>
-  );
-}
 
 export default function ProductCard() {
   const [openModes, setOpenModes] = useState<Set<string>>(
@@ -200,34 +169,6 @@ export default function ProductCard() {
                 <p className="text-xs text-gray-500 mt-0.5">388 candidates screened</p>
               </div>
 
-              {/* Table */}
-              <p className="text-xs text-gray-500 mb-2">Preview: first 50 rows of output</p>
-              <div className="overflow-x-auto rounded-lg border border-white/[0.05]">
-                <table className="w-full text-xs">
-                  <thead>
-                    <tr className="border-b border-white/[0.06] bg-white/[0.02]">
-                      <th className="px-3 py-2 text-left text-gray-500 font-medium w-6">#</th>
-                      <th className="px-3 py-2 text-left text-gray-500 font-medium">PatientID</th>
-                      <th className="px-3 py-2 text-left text-gray-500 font-medium hidden md:table-cell">TestType</th>
-                      <th className="px-3 py-2 text-left text-gray-500 font-medium">Mets | Status</th>
-                      <th className="px-3 py-2 text-left text-gray-500 font-medium hidden lg:table-cell">Mets | Evidence</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {previewRows.map((row) => (
-                      <tr key={row.id} className="border-b border-white/[0.03] hover:bg-white/[0.02]">
-                        <td className="px-3 py-2 text-gray-600">{row.id}</td>
-                        <td className="px-3 py-2 text-gray-400 font-mono text-[10px] max-w-[140px] truncate">{row.patientId}</td>
-                        <td className="px-3 py-2 text-gray-400 hidden md:table-cell max-w-[200px] truncate">{row.testType}</td>
-                        <td className="px-3 py-2">
-                          <StatusBadge status={row.status} />
-                        </td>
-                        <td className="px-3 py-2 text-gray-500 hidden lg:table-cell max-w-[200px] truncate">{row.evidence}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
             </div>
           </div>
 

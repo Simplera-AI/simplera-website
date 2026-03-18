@@ -33,7 +33,7 @@ export default function Hero() {
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight mb-6">
           AI tools that make
           <br />
-          <span className="gradient-text">complex simple</span>
+          <span className="gradient-text">complexity simple</span>
         </h1>
 
         {/* Subtitle */}
