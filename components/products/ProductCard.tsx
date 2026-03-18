@@ -16,13 +16,13 @@ const modes = [
     id: "keyword",
     title: "Keyword Mode",
     description:
-      "Define positive and negative keywords to search clinical text. No AI required — high-accuracy pattern matching with intelligent boundary detection. Perfect for simple, high-volume screening.",
+      "Define positive and negative keywords to search clinical text. High-accuracy pattern matching with intelligent boundary detection. Perfect for simple, high-volume screening.",
   },
   {
     id: "concept",
     title: "Concept Mode",
     description:
-      "Advanced clinical language understanding that detects assertion status, handles negation (\"no evidence of metastasis\"), resolves ambiguity with AI-powered classification, and recognizes synonym concepts. Built for the complexity of real-world clinical language.",
+      "Advanced clinical language understanding that detects assertion status, handles negation (\"no evidence of metastasis\"), resolves ambiguity, and recognizes synonym concepts. Built for the complexity of real-world clinical language.",
   },
   {
     id: "search",
