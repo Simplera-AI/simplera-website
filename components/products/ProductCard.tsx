@@ -137,40 +137,6 @@ export default function ProductCard() {
             ))}
           </div>
 
-          {/* Real UI Preview */}
-          <div className="mt-12 rounded-xl bg-[#0d1117] border border-white/[0.06] overflow-hidden">
-            {/* Window chrome */}
-            <div className="flex gap-1.5 px-4 pt-3 pb-2 border-b border-white/[0.04]">
-              <span className="w-2.5 h-2.5 rounded-full bg-red-500/80" />
-              <span className="w-2.5 h-2.5 rounded-full bg-yellow-500/80" />
-              <span className="w-2.5 h-2.5 rounded-full bg-green-500/80" />
-            </div>
-
-            <div className="p-5">
-              {/* Summary stats */}
-              <div className="grid grid-cols-3 gap-3 mb-5">
-                <div className="rounded-xl bg-white/[0.03] border border-white/[0.06] p-4 text-center">
-                  <p className="text-[10px] uppercase tracking-widest text-gray-500 mb-1">Total Records</p>
-                  <p className="text-2xl font-bold text-white">500</p>
-                </div>
-                <div className="rounded-xl bg-white/[0.03] border border-white/[0.06] p-4 text-center">
-                  <p className="text-[10px] uppercase tracking-widest text-gray-500 mb-1">Positive Hits</p>
-                  <p className="text-2xl font-bold text-emerald-400">242</p>
-                </div>
-                <div className="rounded-xl bg-white/[0.03] border border-white/[0.06] p-4 text-center">
-                  <p className="text-[10px] uppercase tracking-widest text-gray-500 mb-1">Possible Matches</p>
-                  <p className="text-2xl font-bold text-amber-400">95</p>
-                </div>
-              </div>
-
-              {/* Concept label */}
-              <div className="rounded-lg bg-white/[0.02] border border-white/[0.05] px-4 py-3 mb-3">
-                <p className="text-sm font-semibold text-white">Mets</p>
-                <p className="text-xs text-gray-500 mt-0.5">388 candidates screened</p>
-              </div>
-
-            </div>
-          </div>
 
         </div>
       </FadeInUp>
